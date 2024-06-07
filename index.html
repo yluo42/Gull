@@ -125,7 +125,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce <strong>Gull</strong>, a generative multifunctional audio codec. Gull is a general purpose neural audio compression and decompression model which can be applied to a wide range of tasks and applications such as real-time communication, audio super-resolution, and codec language models. The key components of Gull include (1) universal-sample-rate modeling via subband modeling schemes motivated by recent progress in audio source separation, (2) gain-shape representations motivated by traditional audio codecs, (3) improved residual vector quantization modules for simpler training, (4) elastic decoder network that enables user-defined model size and complexity during inference time, (5) built-in ability for audio super-resolution without the increase of bitrate. We compare Gull with existing traditional and neural audio codecs and show that Gull is able to achieve on par or better performance across various sample rates, bitrates and model complexities in both subjective and objective evaluation metrics.
+            We introduce <strong>Gull</strong>, a generative multifunctional audio codec. Gull is a general purpose neural audio compression and decompression model which can be applied to a wide range of tasks and applications such as real-time communication, audio super-resolution, and codec language models. The key components of Gull include (1) universal-sample-rate modeling via subband modeling schemes motivated by recent progress in audio source separation, (2) gain-shape representations motivated by traditional audio codecs, (3) improved residual vector quantization modules, (4) elastic decoder network that enables user-defined model size and complexity during inference time, (5) built-in ability for audio super-resolution without the increase of bitrate. We compare Gull with existing traditional and neural audio codecs and show that Gull is able to achieve on par or better performance across various sample rates, bitrates and model complexities in both subjective and objective evaluation metrics.
           </p>
         </div>
       </div>
@@ -146,12 +146,16 @@
             <div style="overflow-x:auto; min-width: 100%">
         <table class="table" style="background-color: transparent;" >
           <thead>
-            <tr>
+            <tr style="border-bottom: transparent">
               <th align="center"><strong>MP3</strong> (6 kbps)</th>
               <th align="center"><strong>Opus</strong> (6 kbps)</th>
               <th align="center"><strong>EVS</strong> (7.2 kbps)</th>
               <th align="center"><strong>Encodec</strong> (4.8 kbps)</th>
+              <th align="center"><strong><span class="icon"><i class="fa fa-dove"></i></span>Gull-S</strong> (2.4 kbps)</th>
+              <th align="center"><strong><span class="icon"><i class="fa fa-dove"></i></span>Gull-S</strong> (3.6 kbps)</th>
               <th align="center"><strong><span class="icon"><i class="fa fa-dove"></i></span>Gull-S</strong> (4.8 kbps)</th>
+              <th align="center"><strong><span class="icon"><i class="fa fa-dove"></i></span>Gull-L</strong> (2.4 kbps)</th>
+              <th align="center"><strong><span class="icon"><i class="fa fa-dove"></i></span>Gull-L</strong> (3.6 kbps)</th>
               <th align="center"><strong><span class="icon"><i class="fa fa-dove"></i></span>Gull-L</strong> (4.8 kbps)</th>
               <th align="center"><strong>Reference</strong></th>
             </tr>
@@ -171,8 +175,20 @@
                     <source src="audios/speech-demo-16kHz/sample1/Encodec@4.8kbps.wav"
                       type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample1/Gull-S@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample1/Gull-S@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample1/Gull-S@4.8kbps.wav"
                       type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample1/Gull-L@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample1/Gull-L@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample1/Gull-L@4.8kbps.wav"
                       type="audio/wav"></audio></td>
@@ -194,8 +210,20 @@
                     <source src="audios/speech-demo-16kHz/sample10/Encodec@4.8kbps.wav"
                       type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample10/Gull-S@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample10/Gull-S@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample10/Gull-S@4.8kbps.wav"
                       type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample10/Gull-L@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample10/Gull-L@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample10/Gull-L@4.8kbps.wav"
                       type="audio/wav"></audio></td>
@@ -217,8 +245,20 @@
                     <source src="audios/speech-demo-16kHz/sample11/Encodec@4.8kbps.wav"
                       type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample11/Gull-S@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample11/Gull-S@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample11/Gull-S@4.8kbps.wav"
                       type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample11/Gull-L@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample11/Gull-L@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample11/Gull-L@4.8kbps.wav"
                       type="audio/wav"></audio></td>
@@ -240,8 +280,20 @@
                     <source src="audios/speech-demo-16kHz/sample12/Encodec@4.8kbps.wav"
                       type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample12/Gull-S@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample12/Gull-S@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample12/Gull-S@4.8kbps.wav"
                       type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample12/Gull-L@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample12/Gull-L@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample12/Gull-L@4.8kbps.wav"
                       type="audio/wav"></audio></td>
@@ -263,8 +315,20 @@
                     <source src="audios/speech-demo-16kHz/sample13/Encodec@4.8kbps.wav"
                       type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample13/Gull-S@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample13/Gull-S@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample13/Gull-S@4.8kbps.wav"
                       type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample13/Gull-L@2.4kbps.wav"
+                    type="audio/wav"></audio></td>
+                <td style="text-align: center;"><audio controls="" style="width: 170px">
+                  <source src="audios/speech-demo-16kHz/sample13/Gull-L@3.6kbps.wav"
+                    type="audio/wav"></audio></td>
                 <td style="text-align: center;"><audio controls="" style="width: 170px">
                     <source src="audios/speech-demo-16kHz/sample13/Gull-L@4.8kbps.wav"
                       type="audio/wav"></audio></td>
